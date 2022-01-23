@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de ajedrez</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/index.css') }}">    
+
+</head>
+<body>
+
+    <div class="title"><h1>***checkerboard*** </h1></div>
+
+    <div class="chess">
+    
+        {% for i in range(0, y) %}
+        <div class="container">
+            
+            {% for j in range(0, x) %}
+            <div class="user" ></div>
+            {% endfor %}
+
+        </div>
+        {% endfor %}
+    
+    </div>
+    
+</body>
+</html>
